@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.whj.jiaoben.controller.MainViewController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane id="log" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="miaoShaButton" layoutX="541.0" layoutY="19.0" mnemonicParsing="false" onAction="#miaoSha" text="拍卖" />
+            <TextField fx:id="prise" layoutX="230.0" layoutY="60.0" />
+            <TextField fx:id="buyDate" layoutX="230.0" layoutY="19.0" />
+            <Label layoutX="14.0" layoutY="23.0" text="日期时间（yyyy-MM-dd hh:mm:ss）" />
+            <Label layoutX="14.0" layoutY="64.0" text="价格" />
+            <Label layoutX="11.0" layoutY="109.0" text="ntfl链接" />
+            <TextField fx:id="nftUrl" layoutX="230.0" layoutY="105.0" />
+            <Label layoutX="13.0" layoutY="158.0" text="nft类型" />
+            <ChoiceBox fx:id="nftSort" layoutX="230.0" layoutY="162.0" prefWidth="150.0" />
+            <TextArea fx:id="log" layoutX="118.0" layoutY="206.0" prefHeight="146.0" prefWidth="405.0" />
+            <Label layoutX="18.0" layoutY="206.0" />
+            <Label layoutX="16.0" layoutY="205.0" text="日志输出：" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
